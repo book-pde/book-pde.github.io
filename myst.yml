@@ -3,15 +3,15 @@ version: 1
 
 project:
   id: 4da9cb15-177c-41f5-8c4e-6a24b4e87eab
-  #title: Путевые заметки по изучению PDE
+  #title: Путевые заметки по изучению УрЧП
   keywords:
     - jupyter-book
     - pde
-  github: https://github.com/liveni-art/book-pde
+  github: https://github.com/completebasis/book-pde
   # To autogenerate a table of contents, run "jupyter book init --write-toc"
   toc:
     - file: book/index.md
-    - title: "Заметки по УРЧП"
+    - title: "Заметки"
       
       children:
           # ---- Part 0 ----      
@@ -25,8 +25,15 @@ project:
           title: 'Общая теория'
           children:
             - file: book/common-theory/linearity-classif.md
+            
             - title: Канонический вид для 2-го порядка. Алгоритм
               file: book/common-theory/canonical-2order-algorithm.md
+            - title: Фундаментальные решения и функции Грина
+              file: book/common-theory/green-functions.md
+            - title: Функция Грина для волнового уравнения
+              file: book/common-theory/green-functions-wave.md
+
+
         
  
         # ---- Part 2 ----
@@ -50,7 +57,8 @@ project:
               title: 'Некоторые неравенства связанные с УрЧП'
               children:
                 - file: book/lectures/inequalities/01-comparison-inequality.md
-
+    - file: book/about.md
+      title: "Кто мы?"
 # jupyter book toc documentation: https://jupyterbook.org/stable/authoring/table-of-contents/
 
 site:
@@ -58,8 +66,10 @@ site:
     primary_sidebar_footer: ""
   template: book-theme
   options:
+    style: book/custom.css
+    logo: book/images/logo.svg
     # Explicitly clear or change the design options
-    logo_text: "Путевые заметки по изучению PDE"
+    logo_text: "Путевые заметки по изучению УрЧП"
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
