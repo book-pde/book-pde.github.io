@@ -174,10 +174,18 @@ $$
 
 Физический смысл формулы суперпозиции $G = F + \nu$ - отклик на точечный источник с учётом влияния границ
 $F(\mathbf{x},\mathbf{x}_0)$ — отклик на точечный источник без границ:
-![img1](../images/img1.png) 
+```{figure} ../images/img1.png
+:alt: img1
+:width: 30%
+:align: center
+```
 
 $\nu(\mathbf{x},\mathbf{x}_0)$ — влияние границ при отсутствии источника в $\Omega$:
-![img2](../images/img2.png)
+```{figure} ../images/img2.png
+:alt: img2
+:width: 30%
+:align: center
+```
 
 
 ## Функция Грина для уравнения Лапласа

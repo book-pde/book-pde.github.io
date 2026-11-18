@@ -70,7 +70,7 @@ site:
     logo: book/images/logo.svg
     favicon: book/images/favicon.png
     # Explicitly clear or change the design options
-    logo_text: "Путевые заметки по изучению УрЧП"
+    logo_text: "Путевые заметки по изучению уравнений с частными производными"
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
