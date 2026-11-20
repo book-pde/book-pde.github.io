@@ -1,4 +1,35 @@
+---
+authors:
+  - id: masha
+    # Эти поля дополняют сведения об авторе только для этой страницы.
+    # orcid: 0000-0000-0000-0000
+    # corresponding: true # Если true, обязательно укажите email.
+    # email: name@example.com
+    # roles:
+    #   - Writing – original draft
+    # affiliations:
+    #   - Название организации
+    # equal_contributor: false
+    # deceased: false
+    # note: Дополнительная информация об авторе.
+    # phone: "+7 000 000-00-00"
+    # fax: "+7 000 000-00-00"
+    # url: https://example.com
+    # bluesky: username
+    # mastodon: "@username@example.social"
+    # threads: username
+    # linkedin: https://www.linkedin.com/in/username
+    # twitter: username
+    # facebook: https://www.facebook.com/username
+    # discord: https://discord.com/users/123456789
+    # youtube: "@username"
+    # discourse: https://forum.example.com/u/username
+    # slack: https://workspace.slack.com/team/USERID
+    # github: username
+---
 # Классификация по линейности
+
+Общее введение в классификацию нелинейных уравнений можно найти у Эванса [@evans-pde].
 
 **Определение.** Выражение вида
 
@@ -78,7 +109,6 @@ $$u_t + u_{xxx} = 0.$$
 
 $$u_{tt} + u_{xxxx} = 0.$$
 
-
 ### 2. Примеры **полулинейных** уравнений
 
 **1. Нелинейное уравнение Пуассона**
@@ -96,7 +126,6 @@ $$u_{tt} - \Delta u = f(u).$$
 **4. Уравнение Кортевега — де Фриза**
 
 $$u_t + u u_x + u_{xxx} = 0.$$
-
 
 ### 3. Примеры **квазилинейных** уравнений
 
@@ -123,7 +152,6 @@ $$u_t - \Delta(u^{\gamma}) = 0, \gamma > 1.$$
 **6. Нелинейное волновое уравнение вида**
 
 $$u_{tt} - \operatorname{div} \mathbf{a}(Du) = 0.$$
-
 
 ### 4. Примеры **вполне нелинейных** уравнений
 

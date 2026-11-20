@@ -20,6 +20,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install jupyter-book
+
+      - name: Check author IDs
+        run: |
+          python3 scripts/check_authors.py
       
       - name: Build book
         run: |

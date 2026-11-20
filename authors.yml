@@ -1,0 +1,30 @@
+version: 1
+project:
+  contributors:
+    - id: dima
+      name: Дима
+      
+    - id: masha
+      name: Маша
+      
+      # affiliations:
+      #    - Название организации
+
+      # orcid: 0000-0000-0000-0000
+      # corresponding: true # Если true, обязательно укажите email.
+      # email: name@example.com
+      # roles:
+      #   - Writing – original draft
+      #   - Conceptualization
+      #   - Methodology
+      #   - Software
+      #   - Writing – original draft
+      #   - Supervision
+      #   - Project administration
+      #   - Funding acquisition
+      # affiliations:
+      #   - Название организации
+      # twitter: username
+      # github: username
+
+# docs: https://mystmd.org/guide/authorship
