@@ -45,6 +45,8 @@ site:
     primary_sidebar_footer: ""
   template: book-theme
   options:
+    style: ./book.css
+    hide_exports: true
     # Explicitly clear or change the design options
     logo_text: "Путевые заметки по изучению PDE"
     # Ссылки в тексте и список источников используют номера: [1], [2], …
