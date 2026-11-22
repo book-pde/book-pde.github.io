@@ -1,3 +1,7 @@
+---
+authors:
+  - dima
+---
 # Функция Грина для волнового уравнения
 
 По R. Haberman, *Applied Partial Differential Equations*, 4th ed., разд. 11.2.1–11.2.7.

@@ -1,9 +1,15 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 
+extends:
+  - ./authors.yml
+
 project:
   id: 4da9cb15-177c-41f5-8c4e-6a24b4e87eab
   #title: Путевые заметки по изучению УрЧП
+  # Единый каталог источников для всех страниц книги. В тексте: [@evans-pde].
+  bibliography:
+    - book/references.bib
   keywords:
     - jupyter-book
     - pde
@@ -71,6 +77,5 @@ site:
     favicon: book/images/favicon.png
     # Explicitly clear or change the design options
     logo_text: "Путевые заметки по изучению уравнений с частными производными"
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+    # Ссылки в тексте и список источников используют номера: [1], [2], …
+    numbered_references: true
