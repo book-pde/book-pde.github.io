@@ -13,7 +13,7 @@ project:
   keywords:
     - jupyter-book
     - pde
-  github: https://github.com/completebasis/book-pde
+  github: https://github.com/book-pde/book-pde.github.io
   # To autogenerate a table of contents, run "jupyter book init --write-toc"
   toc:
     - file: book/index.md
@@ -68,6 +68,7 @@ project:
 # jupyter book toc documentation: https://jupyterbook.org/stable/authoring/table-of-contents/
 
 site:
+  url: https://book-pde.github.io
   parts:
     primary_sidebar_footer: ""
   template: book-theme
