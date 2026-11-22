@@ -79,7 +79,3 @@ site:
     logo_text: "Путевые заметки по изучению уравнений с частными производными"
     # Ссылки в тексте и список источников используют номера: [1], [2], …
     numbered_references: true
-
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
