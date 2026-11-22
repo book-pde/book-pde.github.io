@@ -1,5 +1,0 @@
-/* Keep the page-edit link while hiding repository and export controls. */
-.myst-fm-github-link,
-.myst-fm-downloads-dropdown {
-  display: none;
-}

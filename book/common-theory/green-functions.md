@@ -1,3 +1,7 @@
+---
+authors:
+  - dima
+---
 # Фундаментальные решения и функции Грина
 
 По материалам презентации Péter Rucz по Theoretical Acoustics [01](https://last.hit.bme.hu/download/theoretical_acoustics/lecture_notes/01_fundamental.pdf), [2](https://last.hit.bme.hu/download/theoretical_acoustics/lecture_notes/02_bie.pdf) и семинара по УрМатам [UMPh26.pdf](https://k5-369-2006.narod.ru/Files/Texts/UMPh26.pdf)

@@ -1,32 +1,6 @@
 ---
 authors:
   - id: masha
-  # todo что-то отображать
-    # Эти поля дополняют сведения об авторе только для этой страницы.
-    # orcid: 0000-0000-0000-0000
-    # corresponding: true # Если true, обязательно укажите email.
-    # email: name@example.com
-    # roles:
-    #   - Writing – original draft
-    # affiliations:
-    #   - Название организации
-    # equal_contributor: false
-    # deceased: false
-    # note: Дополнительная информация об авторе.
-    # phone: "+7 000 000-00-00"
-    # fax: "+7 000 000-00-00"
-    # url: https://example.com
-    # bluesky: username
-    # mastodon: "@username@example.social"
-    # threads: username
-    # linkedin: https://www.linkedin.com/in/username
-    # twitter: username
-    # facebook: https://www.facebook.com/username
-    # discord: https://discord.com/users/123456789
-    # youtube: "@username"
-    # discourse: https://forum.example.com/u/username
-    # slack: https://workspace.slack.com/team/USERID
-    # github: username
 ---
 # Классификация по линейности
 

@@ -74,6 +74,12 @@ html {
   font-size: var(--pde-panel-font-size);
 }
 
+/* Скрыть ссылки на GitHub и скачивание PDF/EPUB */
+.myst-fm-github-link,
+.myst-fm-downloads-dropdown {
+  display: none;
+}
+
 /* Вводный блок на главной (index.md): картинка слева, уменьшенный текст справа */
 .intro-row {
   display: flex;
