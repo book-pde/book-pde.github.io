@@ -1,0 +1,94 @@
+/* ===== Параметры оформления книги ===== */
+:root {
+  /* Базовый размер шрифта всей книги */
+  --pde-font-size: 13pt;
+
+  /* Левая панель (навигация по страницам): прижата к левому краю браузера,
+     основной текст начинается сразу за ней. Это её ширина. */
+  --pde-left-panel-width: 14rem;
+
+  /* Правая панель («В этой статье»): по умолчанию в теме: 5rem / 13rem / 3rem */
+  --pde-right-panel-min: 5rem;
+  --pde-right-panel-max: 13rem;
+  --pde-right-panel-pad: 3rem;
+
+  /* ЦЕНТРАЛЬНАЯ ОБЛАСТЬ. Ширина = 6 колонок по --pde-body-col-max.
+     По умолчанию в теме: 10ch на колонку (=60ch всего), текст ограничен 65ch.
+     Например 16ch => ~96ch, 20ch => ~120ch */
+  --pde-body-col-max: 20ch;
+  --pde-article-max-width: 200ch;
+
+  /* Размер шрифта внутри панелей (1rem = как в основном тексте) */
+  --pde-panel-font-size: 1rem;
+}
+
+html {
+  font-size: var(--pde-font-size);
+}
+
+/* Тема строит страницу на сетке .article-grid. Переопределяем её колонки
+   там, где панели видны (>=1280px): слева ничего лишнего — только ширина
+   левой панели; всё свободное место уходит вправо. */
+@media (min-width: 1280px) {
+  .article-grid {
+    grid-template-columns:
+      [screen-start] .25rem
+      [screen-inset-start page-start page-inset-start body-outset-start] var(--pde-left-panel-width)
+      [body-start gutter-left-start] 1rem
+      [body-inset-start] minmax(8ch, var(--pde-body-col-max))
+      [middle-start] minmax(8ch, var(--pde-body-col-max))
+      [gutter-left-end] minmax(8ch, var(--pde-body-col-max)) minmax(8ch, var(--pde-body-col-max))
+      [gutter-right-start] minmax(8ch, var(--pde-body-col-max))
+      [middle-end] minmax(8ch, var(--pde-body-col-max))
+      [body-inset-end] 1rem
+      [body-end gutter-right-end] var(--pde-right-panel-pad)
+      [body-outset-end] minmax(var(--pde-right-panel-min), var(--pde-right-panel-max))
+      [page-inset-end] var(--pde-right-panel-pad)
+      [page-end] 1fr
+      [screen-inset-end] .25rem
+      [screen-end] !important;
+  }
+
+  /* Левая панель: фиксированная ширина, прижата к левому краю окна
+     (её слой в теме имеет свой класс xl:article-grid с исходными колонками). */
+  .myst-primary-sidebar {
+    display: block !important;
+    left: 0 !important;
+    width: var(--pde-left-panel-width) !important;
+  }
+  .myst-primary-sidebar .myst-primary-sidebar-pointer {
+    width: 100%;
+  }
+}
+
+/* Ограничение ширины текстового блока (в теме 65ch) */
+.article {
+  max-width: var(--pde-article-max-width) !important;
+}
+
+/* Шрифт в левой и правой панелях */
+.myst-primary-sidebar,
+.myst-primary-sidebar-nav,
+.myst-toc,
+.myst-outline {
+  font-size: var(--pde-panel-font-size);
+}
+
+/* Вводный блок на главной (index.md): картинка слева, уменьшенный текст справа */
+.intro-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.intro-image {
+  flex: 0 0 30%;
+}
+.intro-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 1rem;
+}
+@media (max-width: 700px) {
+  .intro-row { flex-direction: column; }
+  .intro-image { flex-basis: auto; width: 100%; }
+}

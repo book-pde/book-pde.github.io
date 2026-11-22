@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 6 104 104" width="104" height="104" role="img" aria-label="PDE: рыбка, наполовину погружённая в волны">
+  <title>PDE</title>
+  <defs>
+    <clipPath id="above"><path d="M -10 68 q 10 -12 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0  L 190 -10 L -10 -10 Z"/></clipPath>
+    <clipPath id="below"><path d="M -10 68 q 10 -12 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0  L 190 110 L -10 110 Z"/></clipPath>
+    <g id="fish">
+      <path d="M 40 66 C 52 46, 90 46, 104 66 C 90 86, 52 86, 40 66 Z"/>
+      <path d="M 100 66 L 126 50 L 126 82 Z"/>
+    </g>
+  </defs>
+  <text x="80" y="30" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#1e88c8">PDE</text>
+  <!-- рыбка над водой -->
+  <g clip-path="url(#above)" fill="#14a39a"><use href="#fish"/></g>
+  <circle cx="54" cy="62" r="2.6" fill="#fff"/><circle cx="54.6" cy="62.2" r="1.2" fill="#0b4f4a"/>
+  <!-- рыбка под водой (бледная) -->
+  <g clip-path="url(#below)" fill="#14a39a" opacity=".3"><use href="#fish"/></g>
+  <!-- волны -->
+  <path d="M -10 68 q 10 -12 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 " fill="none" stroke="#1e88c8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M -10 80 q 10 -12 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 " fill="none" stroke="#14a39a" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+  <path d="M -10 92 q 10 -12 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 t 20 0 " fill="none" stroke="#1e88c8" stroke-width="1.6" stroke-linecap="round" opacity=".4"/>
+</svg>
