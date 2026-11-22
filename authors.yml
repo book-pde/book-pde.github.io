@@ -6,7 +6,8 @@ project:
       
     - id: masha
       name: Маша
-      
+      email: dubinina.2015@yandex.ru
+
       # affiliations:
       #    - Название организации
 
