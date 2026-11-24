@@ -6,7 +6,7 @@ extends:
 
 project:
   id: 4da9cb15-177c-41f5-8c4e-6a24b4e87eab
-  #title: Путевые заметки по изучению УрЧП
+  description:  Book-PDE - Заметки по изучению уравнений в частных производных 
   # Единый каталог источников для всех страниц книги. В тексте: [@evans-pde].
   bibliography:
     - book/references.bib
